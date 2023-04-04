@@ -11,7 +11,10 @@ body {
 section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 40px;
+  padding: 80px 40px;
+}
+.text-justify {
+  text-align: justify;
 }
 section.secondary {
   background-color: #f8f8f8;
@@ -68,7 +71,12 @@ header a {
   letter-spacing: 3px;
   background: white;
   border-radius: 16px;
+  transition: all 150ms ease-in-out;
 }
+a:hover {
+  transform: scale(1.1);
+}
+
 main {
   background-color: white;
 }
@@ -101,8 +109,6 @@ main p {
 
 .instagram-embeds {
   margin: 30px 0;
-  height: 100%;
-  width: 100%;
 }
 .text-center {
   text-align: center;
@@ -170,6 +176,11 @@ footer {
   background-color: #462cb3;
   text-decoration: none;
   border-radius: 6px;
+  transition: all 150ms ease-in-out;
+}
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 footer h4 {
   font-weight: 700;
@@ -213,6 +224,11 @@ footer a {
   header h3 {
     font-size: 12px;
   }
+  main h2,
+  h3 {
+    text-align: center;
+  }
+
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
